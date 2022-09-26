@@ -318,20 +318,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d"
 
 [[package]]
-name = "my_yew_app"
-version = "0.1.0"
-dependencies = [
- "gloo",
- "js-sys",
- "num-bigint",
- "num-traits",
- "wasm-bindgen",
- "wasm-timer",
- "web-sys",
- "yew",
-]
-
-[[package]]
 name = "num-bigint"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -706,4 +692,18 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "yew_test"
+version = "0.1.0"
+dependencies = [
+ "gloo",
+ "js-sys",
+ "num-bigint",
+ "num-traits",
+ "wasm-bindgen",
+ "wasm-timer",
+ "web-sys",
+ "yew",
 ]

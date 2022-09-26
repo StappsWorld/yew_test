@@ -1,5 +1,4 @@
 use gloo::timers::callback::Interval;
-use my_yew_app::FPSCounter;
 use num_bigint::{BigUint, ToBigUint};
 use num_traits::{ops::checked::CheckedMul, One, Zero};
 use std::sync::atomic::AtomicBool;
@@ -8,6 +7,7 @@ use std::sync::Arc;
 use wasm_bindgen::JsCast;
 use web_sys::{EventTarget, HtmlInputElement};
 use yew::{events::Event, html, Component, Context, Html};
+use yew_test::FPSCounter;
 
 pub mod lib;
 
