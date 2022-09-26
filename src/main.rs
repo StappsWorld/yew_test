@@ -92,7 +92,7 @@ impl Component for Model {
         });
 
         html! {
-            <div class="h-full w-full flex flex-col justify-center items-center text-center text-white dark:text-gray-50">
+            <div class="h-full w-full flex flex-col justify-center items-center text-center text-gray-700 dark:text-gray-50">
                 <p class="text-2xl w-1/4">{ format!("FPS: {:03}", self.fps_counter.get_tick()) }</p>
                 <p class="text-2xl w-1/4">{ format!("2^{}", self.power,) }</p>
                 <p class="text-xl">{ format!("{}", self.value) }</p>
@@ -110,7 +110,7 @@ impl Component for Model {
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
-                    class="fill-current text-gray-200 dark:text-gray-50 hover:text-gray-300 dark:hover:text-gray-400"
+                    class="fill-current text-gray-700 dark:text-gray-50 hover:text-gray-300 dark:hover:text-gray-400"
                     viewBox="0 0 16 16"
                 >
                     <path
