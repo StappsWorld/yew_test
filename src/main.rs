@@ -93,9 +93,11 @@ impl Component for Model {
 
         html! {
             <div class="h-full w-full flex flex-col justify-center items-center text-center text-gray-700 dark:text-gray-50">
-                <p class="text-2xl w-1/4">{ format!("FPS: {:03}", self.fps_counter.get_tick()) }</p>
-                <p class="text-2xl w-1/4">{ format!("2^{}", self.power,) }</p>
-                <p class="text-xl">{ format!("{}", self.value) }</p>
+                <p class="text-2xl">{ format!("FPS: {:03}", self.fps_counter.get_tick()) }</p>
+                <p class="text-2xl">{ format!("2^{}", self.power,) }</p>
+                <div class="w-1/2 overflow-hidden md:overflow-scroll">
+                    <p class="text-xl">{ format!("{}", self.value) }</p>
+                </div>
                 <button
                         onclick={link.callback(|_| Msg::PauseTime)}
                         class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-50 rounded-md shadow-md hover:bg-gray-300 dark:hover:bg-gray-600"
