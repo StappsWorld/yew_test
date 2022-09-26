@@ -101,7 +101,7 @@ impl Component for Model {
                         class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-50 rounded-md shadow-md hover:bg-gray-300 dark:hover:bg-gray-600"
                     >{ "Pause" }</button>
                 <div class="mt-10">
-                    <p class="mb-2">{ format!("Displaying on current modulus (lower is smoother, but less performant): {}", self.modulus) }</p>
+                    <p class="mb-2">{ format!("Displaying on current modulus (lower is smoother, but less performant). Currently: {}", self.modulus) }</p>
                     <input onchange={modulus_change} type="range" min="1" max="500" value={ format!("{}", self.modulus) } />
                 </div>
             </div>
